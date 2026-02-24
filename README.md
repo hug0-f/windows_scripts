@@ -1,2 +1,1 @@
-# windows_scripts
-messy Windows scripts
+# messy windows_scripts
