@@ -13,8 +13,13 @@ if (Get-Command "oh-my-posh" -ErrorAction SilentlyContinue) {
 # ============================================================
 # Modules
 # ============================================================
-Import-Module PSReadLine
-Import-Module Terminal-Icons
+if (Get-Module -ListAvailable -Name PSReadLine) {
+    Import-Module PSReadLine
+}
+
+if (Get-Module -ListAvailable -Name Terminal-Icons) {
+    Import-Module Terminal-Icons
+}
 
 if (Get-Module -ListAvailable -Name PSFzf) {
     Import-Module PSFzf
